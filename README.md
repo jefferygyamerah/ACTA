@@ -28,6 +28,7 @@ El cierre de una revisión no activa una cuenta ni resuelve documentos pendiente
 | [Investigación en Panamá](docs/research-panama.md) | Competidores, evidencia del problema, fuentes y límites |
 | [Contacto, privacidad y ciberseguridad](docs/privacy-security.md) | Plantillas, normativa consultada, límites del prototipo y requisitos de un piloto real |
 | [Decisiones acordadas](docs/decisions.md) | Nombre, enfoque bancario, límites de alcance y criterios |
+| [Hackathon y requisitos](docs/HACKATHON.md) | Evento, desafío, plazo, reglas y evidencia pendiente |
 | [Lista de entrega](docs/submission-checklist.md) | Pendientes de implementación, pruebas y presentación |
 | [Procedencia y atribución](NOTICE.md) | Repositorios de referencia y tratamiento de sus licencias |
 
@@ -37,11 +38,22 @@ La investigación reúne fuentes públicas de la Superintendencia de Bancos de P
 
 La ejecución local no equivale a cumplimiento legal ni a seguridad demostrada. Los registros del componente de origen inspeccionado son texto plano; las firmas detectan alteraciones y no cifran el contenido. Para esta fase se utilizarán exclusivamente datos sintéticos. La evaluación de un despliegue con información real corresponde al banco y a sus responsables de privacidad y seguridad.
 
-## Entrega del hackathon
+## Hackathon y desafío
 
-Se prepara una candidatura bancaria independiente para el [reto de Caja de Ahorros](https://www.trydojo.io/hackathons/decentralized-ai-hackathon?tab=tracks), con un video propio de hasta cinco minutos. Antes de entregar, se verificará el acceso del jurado al repositorio y al video. El repositorio se inicia como privado.
+ACTA se prepara para el **[Decentralized AI Hackathon](https://www.trydojo.io/hackathons/decentralized-ai-hackathon)**, celebrado del **9 al 11 de septiembre de 2026** en el marco del ISD Summit, con Tether como socio técnico.
 
-Los documentos de planificación técnica están en inglés; el guion y la demostración se prepararán en español.
+| Detalle | Candidatura de ACTA |
+|---|---|
+| Desafío | **Caja de Ahorros — Soluciones de AI Descentralizada para la Banca** ([Track 05](https://www.trydojo.io/hackathons/decentralized-ai-hackathon?tab=tracks)) |
+| Modalidad | Construcción remota durante 48 horas; asistencia presencial opcional el 11 de septiembre en Ciudad de Panamá |
+| Cierre de entregas | **11 de septiembre de 2026, 08:00 Panamá (UTC−5 / 13:00 UTC)** |
+| Entrega | Repositorio accesible al jurado y video propio de **máximo cinco minutos, en español**, accesible sin credenciales |
+| Requisito técnico | QVAC, con inferencia local o entre pares; sin API de inferencia en la nube |
+| Datos del prototipo | Exclusivamente sintéticos; el reto prohíbe datos reales de clientes de cualquier entidad financiera |
+
+El encaje propuesto es la revisión de expedientes, la consulta de procedimientos y el traspaso claro de solicitudes incompletas entre colaboradores. Las plantillas de contacto son una función secundaria. Esta candidatura no implica validación, aceptación ni respaldo de Caja de Ahorros.
+
+Los [detalles y requisitos del hackathon](docs/HACKATHON.md) recogen las fuentes oficiales, la evaluación y los pendientes de entrega. El repositorio continúa privado; su acceso por el jurado debe verificarse antes del cierre. Los documentos de planificación técnica están en inglés; el guion y la demostración se prepararán en español.
 
 ## Licencia
 

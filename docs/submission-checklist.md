@@ -27,11 +27,14 @@ Initial status: documentation committed; application implementation and validati
 
 ## Presentation and access
 
+Deadline: **11 September 2026 at 08:00 Panama (UTC-5 / 13:00 UTC)**. See [event and challenge requirements](HACKATHON.md).
+
 - [ ] Record the Spanish banking video and keep the final cut below five minutes.
 - [ ] Show the workflow, source support, communication template, local execution and measured limits.
 - [ ] Explicitly credit Vigía as developed by the hackathon teammate in the video and submission; follow [NOTICE](../NOTICE.md).
 - [ ] Distinguish inherited code, ACTA-specific changes, proposed features and demonstrated ACTA results.
-- [ ] Confirm the current sponsor rules and submission requirements.
+- [x] Document the official event, banking challenge and published requirements checked on 10 September 2026.
+- [ ] Recheck the sponsor rules and full participation terms before delivery.
 - [ ] Verify judge access to the repository and video; change visibility or grant access as required and authorized.
 - [ ] Update the README with real setup instructions and measured results.
 - [ ] Submit and retain the submission receipt.
