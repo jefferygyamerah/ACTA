@@ -29,7 +29,8 @@ Initial status: documentation committed; application implementation and validati
 
 - [ ] Record the Spanish banking video and keep the final cut below five minutes.
 - [ ] Show the workflow, source support, communication template, local execution and measured limits.
-- [ ] Distinguish inherited code, proposed features and demonstrated ACTA results.
+- [ ] Explicitly credit Vigía as developed by the hackathon teammate in the video and submission; follow [NOTICE](../NOTICE.md).
+- [ ] Distinguish inherited code, ACTA-specific changes, proposed features and demonstrated ACTA results.
 - [ ] Confirm the current sponsor rules and submission requirements.
 - [ ] Verify judge access to the repository and video; change visibility or grant access as required and authorized.
 - [ ] Update the README with real setup instructions and measured results.

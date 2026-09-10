@@ -5,7 +5,7 @@ Read [README.md](README.md), [docs/plan.md](docs/plan.md) and [docs/privacy-secu
 - Preserve the agreed banking scope and the synthetic-data demonstration boundary.
 - Treat documentation of upstream capabilities as a reference snapshot, not proof that ACTA implements them.
 - Record actual validation results, hardware, model versions, failures and denominators when implementation begins.
-- Preserve upstream notices and attribution when importing source.
+- Explicitly credit Vigía as developed by Jeffery Gyamerah's hackathon teammate. Preserve upstream notices and attribution when importing source, and distinguish reused components from ACTA-specific changes.
 - Never commit real customer records, credentials, private keys, production exports or personal contact lists.
 - Keep customer-contact composition separate from delivery and contact-completion state.
 - Update canonical documentation when an accepted product decision changes. Follow the user's current instructions if they supersede earlier decisions.

@@ -4,7 +4,7 @@
 
 **Bank submission: ACTA**
 
-ACTA is a dedicated banking submission with its own five-minute video; the teammate continues Vigía. The repository currently contains documentation only. Application code has not been extracted or executed here, and all implementation details below are plans or explicitly identified upstream observations.
+ACTA is a dedicated banking submission with its own five-minute video; Vigía was developed by Jeffery Gyamerah's hackathon teammate, who continues that project. The repository currently contains documentation only. Application code has not been extracted or executed here, and all implementation details below are plans or explicitly identified upstream observations.
 
 **Decision**
 
@@ -63,7 +63,7 @@ The agreed template-based scope, Panama legal sources, cybersecurity controls an
 
 **Independent extraction**
 
-Use a separate working copy and bank submission repo. Preserve MIT attribution and accurately identify inherited team components.
+Use a separate working copy and bank submission repo. Explicitly credit Vigía as developed by Jeffery Gyamerah's hackathon teammate. Preserve its license and author notices, and record which components are reused and which changes ACTA adds.
 
 | Source | Purpose |
 |---|---|
@@ -119,13 +119,15 @@ Target 4:50–4:55. Narration in Spanish. Use the whole video for banking.
 | 2:50–3:25 | Actual local execution without external connectivity; model/hardware |
 | 3:25–4:10 | Human review, save/reload including the draft, and export |
 | 4:10–4:30 | Original export verifies; altered copy fails |
-| 4:30–4:55 | Small evaluation table, limits and proposed bank pilot |
+| 4:30–4:55 | Small evaluation table, teammate attribution, limits and proposed bank pilot |
 
 Suggested opening:
 “Cuando una solicitud llega incompleta, el colaborador necesita encontrar el procedimiento correcto y dejar claro qué falta. ACTA reúne la guía, la revisión y el expediente en un flujo que funciona con IA local.”
 
 Suggested closing:
 “Demostramos el flujo con una guía y solicitudes ficticias. El siguiente paso es evaluarlo con procedimientos aprobados y colaboradores de una sucursal, midiendo tiempo de revisión, correcciones y solicitudes que requieren seguimiento.”
+
+After importing the planned components, include this credit in the video and submission: “ACTA adapta componentes de Vigía, desarrollado por mi compañero de hackathon.” Identify the actual additions made in ACTA. While extraction remains pending, describe the reuse as planned.
 
 **Nominal 18-hour allocation**
 

@@ -2,9 +2,13 @@
 
 **Revisión de expedientes bancarios y preparación del siguiente paso, con IA local.**
 
-ACTA es una propuesta para ayudar al personal de una sucursal a consultar procedimientos, revisar solicitudes incompletas y dejar un expediente claro para la siguiente persona. Cuando corresponde contactar al cliente, prepara una plantilla de correo, mensaje breve o guía de conversación para revisión del colaborador.
+ACTA es una propuesta para ayudar al personal de una sucursal a consultar procedimientos, revisar solicitudes incompletas y dejar un expediente claro para la siguiente persona. Como función de apoyo, cuando corresponde contactar al cliente, prepara una plantilla de correo, mensaje breve o guía de conversación para revisión del colaborador.
 
 > **Estado: documentación y planificación.** Este repositorio todavía no contiene la aplicación, un modelo ejecutable ni resultados propios de pruebas. La reutilización de componentes de Vigía está planificada. La demostración utilizará una entidad, procedimientos y clientes ficticios.
+
+## Autoría y reutilización
+
+[Vigía](https://github.com/cpu-16/vigia) fue desarrollado por un compañero de hackathon de Jeffery Gyamerah. ACTA prevé reutilizar componentes de ese trabajo, incluido su módulo bancario, y conservar sus avisos de autoría y licencia. Las adaptaciones y aportaciones específicas de ACTA se documentarán de forma explícita; por ahora este repositorio contiene únicamente planificación. Ver [procedencia y atribución](NOTICE.md).
 
 ## Flujo previsto
 

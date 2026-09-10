@@ -6,6 +6,8 @@ ACTA is a separate banking submission. This initial repository contains planning
 
 Reference: [cpu-16/vigia](https://github.com/cpu-16/vigia).
 
+**Authorship:** Vigía was developed by Jeffery Gyamerah's hackathon teammate. ACTA's planned reuse builds on that teammate's work, including the banking module already present in Vigía. Credit that origin explicitly in the README, submission and demonstration, and distinguish it from adaptations subsequently made in ACTA.
+
 The implementation plan was based on inspection of commit `942b94307265f383ac941141a6a503e69ebcd079`, particularly `src/sucursal/`, shared runtime/event/signature components, banking fixtures and banking UI files.
 
 The upstream banking module was already present; it must not be presented as newly invented or wholly authored by ACTA. When importing files, preserve their license, copyright notices and contributor attribution. The earlier inspection identified an MIT license; verify the exact notice at the imported revision.
