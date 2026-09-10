@@ -29,6 +29,7 @@ Initial status: documentation committed; application implementation and validati
 
 Deadline: **11 September 2026 at 08:00 Panama (UTC-5 / 13:00 UTC)**. See [event and challenge requirements](HACKATHON.md).
 
+- [ ] Complete the [submission form packet](SUBMISSION.md): name, tracks, platform, description, logo, banner, video, pitch deck and live-demo fields, with readiness stated accurately.
 - [ ] Record the Spanish banking video and keep the final cut below five minutes.
 - [ ] Show the workflow, source support, communication template, local execution and measured limits.
 - [ ] Explicitly credit Vigía as developed by the hackathon teammate in the video and submission; follow [NOTICE](../NOTICE.md).

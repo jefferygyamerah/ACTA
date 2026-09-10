@@ -2,6 +2,8 @@
 
 Official event and track pages checked on **10 September 2026**. This is a preparation record, not a submission receipt or an eligibility decision.
 
+The [submission form packet](SUBMISSION.md) maps the visible Dojo fields, includes a description within 500 characters, and tracks logo, banner, video, deck and live-demo readiness.
+
 ## Event and deadline
 
 - **Event:** [Decentralized AI Hackathon](https://www.trydojo.io/hackathons/decentralized-ai-hackathon), 9–11 September 2026, within ISD Summit; Tether is the technical partner.
