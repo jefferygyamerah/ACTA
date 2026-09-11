@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACTA — Evidencia verificada</title>
+<meta name="description" content="Evidencia real y límites del prototipo ACTA: pruebas de software, flujo de dos visitas verificado, persistencia firmada y alcance del prototipo.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido" data-en="Skip to content">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">ACTA<small data-en="Every step, backed up.">Cada paso, con respaldo.</small></a>
+    <div class="header-bar">
+      <button class="lang-toggle" type="button" aria-pressed="false" aria-label="Cambiar idioma a inglés" data-en-aria="Switch language to Spanish">English</button>
+      <nav class="site-nav site-nav-desktop" aria-label="Secciones" data-en-aria="Sections">
+        <a href="index.html#visita-1" data-en="First visit">Primera visita</a>
+        <a href="index.html#fuentes" data-en="Source review">Revisión con fuentes</a>
+        <a href="index.html#visita-2" data-en="Second visit">Segunda visita</a>
+        <a href="index.html#revision-humana" data-en="Human review">Revisión humana</a>
+      </nav>
+      <details class="nav-details">
+        <summary data-en="Sections">Secciones</summary>
+        <nav class="site-nav" aria-label="Secciones" data-en-aria="Sections">
+          <a href="index.html#visita-1" data-en="First visit">Primera visita</a>
+          <a href="index.html#fuentes" data-en="Source review">Revisión con fuentes</a>
+          <a href="index.html#visita-2" data-en="Second visit">Segunda visita</a>
+          <a href="index.html#revision-humana" data-en="Human review">Revisión humana</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="section">
+    <p class="eyebrow" data-en="Verified evidence and limits">Evidencia verificada y límites</p>
+    <h1 data-en="What is proven, and what is not">Qué está demostrado y qué no</h1>
+    <p class="lead" data-en="Everything on this page comes from recorded local runs on this PC on 2026-09-10, with synthetic data only. The counts are software checks of the application; they are not model accuracy measurements, bank acceptance or productivity measurements.">Todo en esta página proviene de ejecuciones locales registradas en este PC el 2026-09-10, solo con datos sintéticos. Los conteos son verificaciones de software de la aplicación; no son mediciones de exactitud del modelo, ni aceptación bancaria, ni mediciones de productividad.</p>
+    <p class="muted" data-en="Submission for the Decentralized AI Hackathon · Track05 · Local intelligence for banking.">Propuesta para el Decentralized AI Hackathon · Track05 · Inteligencia local para la banca.</p>
+
+    <h2 data-en="Verified results">Resultados verificados</h2>
+    <table class="ev-table">
+      <thead>
+        <tr>
+          <th data-en="Check">Verificación</th>
+          <th data-en="Result">Resultado</th>
+          <th data-en="Exact scope">Alcance exacto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-en="Deterministic test suite">Suite de pruebas deterministas</td>
+          <td><strong>35/35</strong></td>
+          <td data-en="Software checks of the app (services, store, signatures, review gates). Not model accuracy.">Verificaciones de software de la aplicación (servicios, almacén, firmas, controles de revisión). No es exactitud del modelo.</td>
+        </tr>
+        <tr>
+          <td data-en="Two-visit workflow, run workflow-v6">Flujo de dos visitas, ejecución workflow-v6</td>
+          <td><strong>9/9</strong> <span data-en="stages passed">etapas superadas</span></td>
+          <td data-en="Real Edge, synthetic PDFs, local QVAC inference, automated review mechanics. All 50 recorded source hashes match. No bank employee acceptance.">Edge real, PDF sintéticos, inferencia QVAC local, mecánica de revisión automatizada. Los 50 hashes de fuente registrados coinciden. Sin aceptación de un empleado bancario.</td>
+        </tr>
+        <tr>
+          <td data-en="Runtime identity">Identidad del entorno</td>
+          <td>QVAC SDK 0.18.2 · llama 0.45.0 · Qwen3-1.7B-Q4_0</td>
+          <td data-en="Local model (about 1.06 GB) on this PC's GPU, Windows x64, Node 24. No cloud inference endpoint.">Modelo local (≈1,06 GB) en la GPU de este PC, Windows x64, Node 24. Sin servicio de inferencia en la nube.</td>
+        </tr>
+        <tr>
+          <td data-en="Development document reading">Lectura de documentos de desarrollo</td>
+          <td><strong>5/5</strong> <span data-en="matched before review">coincidentes antes de revisión</span></td>
+          <td data-en="Policy-filtered required fields on the five development PDFs; zero corrections; three raw out-of-scope proposals retained. Not a general accuracy estimate.">Campos requeridos filtrados por política en los cinco PDF de desarrollo; cero correcciones; tres propuestas crudas fuera de alcance conservadas. No es una estimación general de exactitud.</td>
+        </tr>
+        <tr>
+          <td data-en="Durable records">Registros duraderos</td>
+          <td><strong>2</strong> <span data-en="signed reviews preserved">revisiones firmadas conservadas</span></td>
+          <td data-en="Both signed reviews survived a browser reload, a service restart and an independent SQLite reader in a separate Node process; original document bytes preserved.">Ambas revisiones firmadas sobrevivieron a la recarga del navegador, al reinicio del servicio y a un lector SQLite independiente en un proceso Node separado; los bytes originales de los documentos se conservaron.</td>
+        </tr>
+        <tr>
+          <td data-en="Export integrity">Integridad de la exportación</td>
+          <td data-en="Original accepted · altered copy rejected">Original aceptada · copia alterada rechazada</td>
+          <td data-en="Ed25519 export verified against the installation's independent trusted public key. Final record text SHA-256 begins e091ff64. No authenticated bank identity is claimed.">Exportación Ed25519 verificada contra la llave pública de confianza independiente de la instalación. El SHA-256 del texto final del registro comienza e091ff64. No se declara identidad bancaria autenticada.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 data-en="Evaluation on unfamiliar documents">Evaluación con documentos distintos</h2>
+    <p data-en="A corrected replay over six unfamiliar synthetic documents (no new inference) shows the model still fails materially outside the development set:">Una repetición corregida sobre seis documentos sintéticos no vistos (sin nueva inferencia) muestra que el modelo aún falla materialmente fuera del conjunto de desarrollo:</p>
+    <ul class="proof-list">
+      <li data-en="Raw field/kind checks: 24/42. Policy-filtered checks: 14/28.">Verificaciones crudas de campo/tipo: 24/42. Verificaciones filtradas por política: 14/28.</li>
+      <li data-en="Raw document-exact: 0/6. Scoped document-exact: 1/6. Document kind: 5/6.">Documento exacto en crudo: 0/6. Documento exacto acotado: 1/6. Tipo de documento: 5/6.</li>
+      <li data-en="Recorded failure modes include citing nonexistent lines, confusing dates and extracting content injected by an irrelevant flyer.">Los fallos registrados incluyen citar líneas inexistentes, confundir fechas y extraer contenido inyectado por un volante irrelevante.</li>
+    </ul>
+    <p class="muted" data-en="This is why every proposed value in ACTA must be confirmed against its literal source line by a person. Literal source matching alone does not establish semantic correctness.">Por esto cada valor propuesto en ACTA debe ser confirmado por una persona frente a su línea literal. La coincidencia literal con la fuente no garantiza la corrección semántica.</p>
+
+    <h2 data-en="Limits that remain">Límites vigentes</h2>
+    <div class="scope-panel">
+      <ul>
+        <li data-en="Text PDFs, TXT and Markdown only; scans without a text layer are explicitly rejected. No OCR.">Solo PDF con texto, TXT y Markdown; los escaneos sin capa de texto se rechazan explícitamente. No hay OCR.</li>
+        <li data-en="The automation actor demonstrates review mechanics; it does not represent acceptance by a bank employee.">El actor de automatización demuestra la mecánica de revisión; no representa aceptación de un empleado bancario.</li>
+        <li data-en="Plaintext SQLite records and exports; no production authentication, key custody or encryption.">Registros SQLite y exportaciones en texto plano; sin autenticación de producción, custodia de llaves ni cifrado.</li>
+        <li data-en="Same-machine installation only; enforced network isolation and independent-machine installation were not tested.">Solo instalación en la misma máquina; no se probaron aislamiento de red forzado ni instalación en una máquina independiente.</li>
+        <li data-en="No measured productivity gain, no bank validation, no public submission.">Sin ganancia de productividad medida, sin validación bancaria, sin presentación pública.</li>
+      </ul>
+    </div>
+
+    <h2 data-en="Real captures from the verified run">Capturas reales de la ejecución verificada</h2>
+    <p class="muted" data-en="Unedited copies of the workflow-v6 run captures (2026-09-10), synthetic data. Provenance: see assets/PROVENANCE.md in this site.">Copias sin editar de las capturas de la ejecución workflow-v6 (2026-09-10), datos sintéticos. Procedencia: véase assets/PROVENANCE.md en este sitio.</p>
+    <div class="ev-grid">
+      <figure>
+        <img src="assets/app-reviewed-document.png" alt="Captura real: lectura confirmada del comprobante con líneas de origen." data-en-alt="Real capture: confirmed reading of the proof with source lines.">
+        <figcaption data-en="Confirmed reading of the proof of address with its literal source lines (visit 1).">Lectura confirmada del comprobante de domicilio con sus líneas literales de origen (visita 1).</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/app-findings-visit-1.png" alt="Captura real: hallazgos de la visita 1 con dos pendientes." data-en-alt="Real capture: visit 1 findings with two pending items.">
+        <figcaption data-en="Visit 1 findings: profile and identification retained; address and income evidence pending.">Hallazgos de la visita 1: perfil e identificación conservados; domicilio y respaldo de ingresos pendientes.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/app-findings-visit-2.png" alt="Captura real: hallazgos de la visita 2, todos conservados." data-en-alt="Real capture: visit 2 findings, all retained.">
+        <figcaption data-en="Visit 2 findings: all four sections retained after the customer's response.">Hallazgos de la visita 2: los cuatro apartados conservados tras la respuesta de la clienta.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/app-first-saved.png" alt="Captura real: primera revisión guardada." data-en-alt="Real capture: first saved review.">
+        <figcaption data-en="First saved review: pending customer response.">Primera revisión guardada: pendiente de respuesta del cliente.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/app-second-saved.png" alt="Captura real: segunda revisión guardada, lista para supervisor." data-en-alt="Real capture: second saved review, ready for the supervisor.">
+        <figcaption data-en="Second saved review: ready for supervisor review, with both visits in the history.">Segunda revisión guardada: lista para revisión del supervisor, con ambas visitas en el historial.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/app-restarted.png" alt="Captura real: el mismo expediente tras recargar y reiniciar el servicio." data-en-alt="Real capture: the same case file after a reload and a service restart.">
+        <figcaption data-en="The same case file after a browser reload and a service restart: both signed reviews preserved.">El mismo expediente tras recargar el navegador y reiniciar el servicio: ambas revisiones firmadas conservadas.</figcaption>
+      </figure>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn btn-primary" href="index.html" data-en="Back to the presentation">Volver a la presentación</a>
+      <a class="btn btn-ghost" href="http://127.0.0.1:4318/" data-en="Open ACTA on this PC">Abrir ACTA en este PC</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p data-en="Prototype with synthetic data · Submission for the Decentralized AI Hackathon · Track05 · Local intelligence for banking.">Prototipo con datos sintéticos · Propuesta para el Decentralized AI Hackathon · Track05 · Inteligencia local para la banca.</p>
+    <p class="foot-affil" data-en="ACTA is an independent submission for this competition. It is not affiliated with, sponsored by or endorsed by Caja de Ahorros.">ACTA es una propuesta independiente para esta competición. No está afiliada a Caja de Ahorros ni cuenta con su patrocinio o aval.</p>
+    <p data-en="The logo identifies the challenge presenter and belongs to Caja de Ahorros.">El logotipo identifica al presentador del reto y pertenece a Caja de Ahorros.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

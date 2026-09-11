@@ -1,0 +1,223 @@
+{
+  "generatedAt": "2026-09-11T01:34:12.417Z",
+  "round": 6,
+  "scope": "Six remaining warm-polish refinements: compact competition panel (<=200px at 390px), hero photo after headline and in the first phone viewport, concise generated-scene captions ES/EN, consolidated footers, >=4.5:1 section numerals, README delivery update. Earlier evidence rounds preserved untouched.",
+  "base": "http://127.0.0.1:4321/",
+  "browser": "Microsoft Edge (Playwright, channel msedge, headless)",
+  "pendingAssets": [],
+  "pendingNote": "Both conceptual photos delivered and verified in round 5; unchanged here.",
+  "sourceHashes": {
+    "website/index.html": "859e9f3058b12380453746bcc0340fee19b8c606503619100494e8cd7fdf2dd1",
+    "website/evidence.html": "125fc3b343c13b6431fdc7b10078d972473ed4643d870e6dbf101f97672f7c2b",
+    "website/styles.css": "643cdab34b02a9079ad777b13ea645eb961428dfc56c4c48aa35d373ab00a250",
+    "website/site.js": "93b2514d1370daa4fc827557e2ed214169a8e7e7b9f0f7b30a4e3b502a88afd2",
+    "website/serve.mjs": "46eaeaff0abcae6660f11f246e35c79a6d10bf384598283edaa06e54f255d3f9",
+    "website/README.md": "558dac732204c11f3042f3ec5a8ca57e28eadabdd50eec2c11b73b618f09bf2c",
+    "website/assets/PROVENANCE.md": "b80e79fb995c3c26ea8bc74cc67f2ed22dd9fe0788ce1ef181bdfd93f18ddf28"
+  },
+  "appSourceHashCheck": "50 recorded workflow-v6 source hashes recomputed; see app-source-hashes check.",
+  "totalChecks": 33,
+  "passed": 33,
+  "failed": 0,
+  "pending": 0,
+  "checks": [
+    {
+      "id": "app-source-hashes",
+      "description": "app's 50 recorded source hashes unchanged (no app/QVAC rerun)",
+      "status": "pass",
+      "details": "50/50 files match recorded hashes"
+    },
+    {
+      "id": "desktop-load",
+      "description": "index loads with no console errors and no 404s",
+      "status": "pass",
+      "details": "clean load"
+    },
+    {
+      "id": "network-scope",
+      "description": "all website requests stay local to 127.0.0.1:4321",
+      "status": "pass",
+      "details": "6 requests, all same-origin"
+    },
+    {
+      "id": "competition-identity",
+      "description": "exact competition wording ES/EN, official logo intact and unclipped",
+      "status": "pass",
+      "details": "ES/EN exact; logo 188x43 natural, ~180px rendered, aspect preserved"
+    },
+    {
+      "id": "no-affiliation",
+      "description": "exact no-affiliation text in hero and both footers, ES/EN",
+      "status": "pass",
+      "details": "exact strings on hero + both footers, both locales"
+    },
+    {
+      "id": "footer-consolidated",
+      "description": "footers consolidated: event identity, exact disclaimer, synthetic scope, logo ownership",
+      "status": "pass",
+      "details": "3 concise paragraphs per footer, both pages, both locales"
+    },
+    {
+      "id": "caption-locale",
+      "description": "concise generated-scene captions, exact ES/EN, no production exclusions",
+      "status": "pass",
+      "details": "ES: Atención documental en sucursal. / Revisión de un documento. | EN: Document assistance at a branch. / Reviewing a document at the branch."
+    },
+    {
+      "id": "sec-num-contrast",
+      "description": "section numerals computed contrast >= 4.5:1 on every section background",
+      "status": "pass",
+      "details": "visita-1:6.19 (rgb(135, 85, 16) on rgb(255, 253, 248)); fuentes:9.25 (rgb(255, 217, 138) on rgb(7, 53, 94)); visita-2:5.89 (rgb(135, 85, 16) on rgb(250, 247, 241)); revision-humana:5.35 (rgb(135, 85, 16) on rgb(243, 236, 221))"
+    },
+    {
+      "id": "fixture-alignment",
+      "description": "source viewer still byte-aligned with demo.json (A203, lines 4/3)",
+      "status": "pass",
+      "details": "exact fixture text and line numbers preserved"
+    },
+    {
+      "id": "desktop-no-overflow",
+      "description": "no horizontal overflow at 1440x1000",
+      "status": "pass",
+      "details": "1440 <= 1440"
+    },
+    {
+      "id": "hero-desktop-composition",
+      "description": "desktop hero keeps two-column text/photo layout, photo vertically centered",
+      "status": "pass",
+      "details": "photo right column 535px wide; support under heading"
+    },
+    {
+      "id": "desktop-section-shots",
+      "description": "settled per-section desktop captures",
+      "status": "pass",
+      "details": "6 sections"
+    },
+    {
+      "id": "source-controls",
+      "description": "source switch swaps literal source and proposed value",
+      "status": "pass",
+      "details": "14 -> 41"
+    },
+    {
+      "id": "source-line-action",
+      "description": "Ver línea de origen highlights/focuses line 3, reveals reason",
+      "status": "pass",
+      "details": "line 3 highlighted + focused"
+    },
+    {
+      "id": "source-history-links",
+      "description": "history links select+unhide the right panel before navigating",
+      "status": "pass",
+      "details": "panel selected, unhidden, navigated"
+    },
+    {
+      "id": "visit-tabs-and-history",
+      "description": "visit tabs swap examples; history matches selected visit",
+      "status": "pass",
+      "details": "visit1=1 review, visit2=2 reviews, statuses intact"
+    },
+    {
+      "id": "visit-tabs-keyboard",
+      "description": "arrow/Home/End keys move between visit tabs",
+      "status": "pass",
+      "details": "keyboard rail works"
+    },
+    {
+      "id": "ack-flow",
+      "description": "acknowledgement gates confirm, shows result, reset restores",
+      "status": "pass",
+      "details": "gate + reset intact"
+    },
+    {
+      "id": "lang-toggle-persist",
+      "description": "EN toggle switches copy, relabels control, survives reload",
+      "status": "pass",
+      "details": "persisted + restored"
+    },
+    {
+      "id": "concept-alt-i18n",
+      "description": "concept alt/caption follow active language",
+      "status": "pass",
+      "details": "alt swap ok incl. logo"
+    },
+    {
+      "id": "anchor-focus-scroll",
+      "description": "nav anchor scrolls, focuses, clears sticky header",
+      "status": "pass",
+      "details": "top=94 >= header=80"
+    },
+    {
+      "id": "close-composition",
+      "description": "navy close: white headline, readable CTAs, measured contrast + focus",
+      "status": "pass",
+      "details": "headline white on navy; CTA 12.5:1 rest / 10.3:1 hover; comp line present"
+    },
+    {
+      "id": "evidence-page",
+      "description": "evidence counts, intact captures, polished structure",
+      "status": "pass",
+      "details": "counts + captures intact, sheet saved"
+    },
+    {
+      "id": "full-page-desktop",
+      "description": "settled full-page desktop capture",
+      "status": "pass",
+      "details": null
+    },
+    {
+      "id": "photos-present",
+      "description": "delivered photos render at 3:2 with no pending scaffolding",
+      "status": "pass",
+      "details": "[\"1600x1062\",\"1600x1062 lazy\"]"
+    },
+    {
+      "id": "mobile-390-header",
+      "description": "compact header <=110px with collapsible nav at 390px",
+      "status": "pass",
+      "details": "header 65px, nav collapsible"
+    },
+    {
+      "id": "comp-panel-compact-390",
+      "description": "competition panel measured <=200px at 390px, logo <=180px and legible",
+      "status": "pass",
+      "details": "panel 167px tall, logo 120x27 aspect kept"
+    },
+    {
+      "id": "hero-photo-mobile-order",
+      "description": "photo follows headline, precedes lead/actions; meaningful part in first 390x844 viewport",
+      "status": "pass",
+      "details": "DOM h1->photo->lead; photo top 517px of 844px, 100% visible; lead at 862px"
+    },
+    {
+      "id": "mobile-390",
+      "description": "no overflow at 390px; hero structure present; settled captures",
+      "status": "pass",
+      "details": "390 <= 390, captures settled"
+    },
+    {
+      "id": "mobile-360",
+      "description": "no overflow at 360px; compact header",
+      "status": "pass",
+      "details": "360 <= 360, header 81px"
+    },
+    {
+      "id": "short-1366x768",
+      "description": "no overflow at 1366x768; settled closing capture",
+      "status": "pass",
+      "details": "1366 <= 1366"
+    },
+    {
+      "id": "reduced-motion",
+      "description": "all reveal blocks fully visible with reduced motion",
+      "status": "pass",
+      "details": "0 hidden"
+    },
+    {
+      "id": "no-js-readable",
+      "description": "full Spanish page + logo + anchors with JS disabled",
+      "status": "pass",
+      "details": "readable, logo renders, disclaimer present"
+    }
+  ]
+}

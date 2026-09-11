@@ -16,3 +16,9 @@ node_modules/
 /artifacts/private/
 .DS_Store
 Thumbs.db
+.local/
+artifacts/evidence/acta/*.webm
+artifacts/evidence/acta/*.mp4
+
+artifacts/evidence/acta/presentation/*.mp4
+artifacts/evidence/acta/presentation/*.webm

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sdk": { "package": "@qvac/sdk", "version": "0.18.2", "addon": "@qvac/llm-llamacpp", "addonVersion": "0.45.0" },
+  "models": [{
+    "id": "qwen3-1.7b-q4", "role": "procedure-selection", "filename": "Qwen3-1.7B-Q4_0.gguf",
+    "url": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF/resolve/d7f544eead698dbd1f15126ef60b45a1e1933222/Qwen3-1.7B-Q4_0.gguf",
+    "revision": "d7f544eead698dbd1f15126ef60b45a1e1933222",
+    "expectedBytes": 1056782912, "sha256": "c876f159707a4e4f70e045106c69db15bfc935a4981706fd4f65c6e7ea1e81c5",
+    "license": "Apache-2.0", "modelType": "llamacpp-completion",
+    "modelCard": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF/blob/d7f544eead698dbd1f15126ef60b45a1e1933222/README.md",
+    "loadConfig": { "ctx_size": 8192, "device": "gpu", "gpu_layers": 99, "main-gpu": "dedicated", "parallel": 1, "verbosity": 0, "reasoning_budget": 0 }
+  }]
+}

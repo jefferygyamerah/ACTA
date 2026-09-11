@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "completedAt": "2026-09-10T22:20:19.9056569Z",
+  "sourceHead": "cce840fd0b3eff6f06b501b796abdd3d3d835af0",
+  "dirtySource": true,
+  "sourceIdentity": "85-file frozen source manifest and ZIP; runtime source additionally bound to 50 E2E file hashes",
+  "scope": "Same-machine fresh locked dependency installation, reused SHA-verified model, isolated real UI workflow, and live Windows deployment",
+  "releasePath": "C:\\Users\\jeffe\\Documents\\ChatGPT\\ACTA\\.local\\releases\\candidate-7dc602c459",
+  "url": "http://127.0.0.1:4318",
+  "pid": 27428,
+  "dataPath": "C:\\Users\\jeffe\\Documents\\ChatGPT\\ACTA\\.local\\data",
+  "modelPath": "C:\\Users\\jeffe\\Documents\\ChatGPT\\ACTA\\.local\\models",
+  "checks": [
+    {
+      "name": "fresh locked dependencies",
+      "command": "npm.cmd ci --no-audit --no-fund",
+      "exitCode": 0,
+      "result": "210 packages installed; npm ls verified pinned SDK/pdf-parse/Playwright"
+    },
+    {
+      "name": "build",
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "syntaxFiles": 35
+    },
+    {
+      "name": "initial tests",
+      "command": "npm.cmd test",
+      "exitCode": 1,
+      "passed": 20,
+      "total": 35,
+      "reason": "Missing release .local scratch directory when reusing an external model directory. Original failure retained."
+    },
+    {
+      "name": "scratch setup",
+      "command": "New-Item -ItemType Directory -Path .local -Force",
+      "exitCode": 0,
+      "result": "No source changes required. Default model provisioning normally creates this parent; external ACTA_MODEL_DIR does not."
+    },
+    {
+      "name": "final tests",
+      "command": "npm.cmd test",
+      "exitCode": 0,
+      "passed": 35,
+      "total": 35
+    },
+    {
+      "name": "model verification",
+      "command": "ACTA_MODEL_DIR=<existing verified model directory>; npm.cmd run provision",
+      "exitCode": 0,
+      "mode": "Existing model bytes reused and SHA-256 verified; no new download"
+    },
+    {
+      "name": "connected release workflow",
+      "command": "ACTA_MODEL_DIR=<existing model directory>; ACTA_RECONCILIATION_EVIDENCE=<local-release/workflow>; GIT_DIR=<source .git>; GIT_WORK_TREE=<releasePath>; GIT_OPTIONAL_LOCKS=0; node scripts/reconciliation-e2e.js",
+      "exitCode": 0,
+      "passedStages": 9,
+      "totalStages": 9,
+      "scope": "Five real QVAC PDF readings; explicit review; two visits; note isolation; reload/restart; independent process; original and modified export; scan rejection"
+    },
+    {
+      "name": "live service",
+      "result": "health ok; QVAC runtime ready; automation false; served UI hash equals tested release"
+    },
+    {
+      "name": "live UI",
+      "result": "Actual Edge desktop/mobile inspected; role and demo entry visible; no horizontal overflow or page errors; no case modified"
+    }
+  ],
+  "persistence": {
+    "liveCaseCount": 3,
+    "liveRecordCount": 0,
+    "exactLiveCaseBodiesPreserved": true,
+    "exactLiveRecordBodiesPreserved": true,
+    "signingKeysPreserved": true,
+    "isolatedWorkflowSignedRecords": 2,
+    "separateProcessExactRecords": true,
+    "originalIdentityBytesPreserved": true
+  },
+  "modelScope": {
+    "documents": 5,
+    "correctBeforeReview": 5,
+    "scope": "Policy-filtered expected required fields; not raw perfect extraction or general accuracy",
+    "reviewCorrections": 0,
+    "rawOutOfScopeProposals": 3
+  },
+  "finalVideo": {
+    "status": "awaiting-user-script-and-format-approval",
+    "script": "docs/demo-reconciliation-es.md",
+    "targetSeconds": 255,
+    "format": "1920x1080 16:9 MP4 H.264 30fps; Spanish voice and captions",
+    "voice": "uFIr22uwx4X0yvGodynp",
+    "narrationGenerated": false,
+    "finalVideoAssembled": false
+  },
+  "limits": [
+    "Same machine only; no independent-machine or bank installation",
+    "Synthetic data and policy; no bank employee acceptance or measured savings",
+    "Unfamiliar extraction and injection errors remain; explicit source review required",
+    "No production authentication/encryption or enforced network isolation claimed",
+    "Old report/video on port4320 remains historical",
+    "No push, public publication, submission or customer contact performed"
+  ],
+  "artifacts": [
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/source-manifest.json",
+      "sha256": "340c4c93a775f5c712a9df0ed97558360323da360bee0d01d436ad837a212002"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/acta-source.zip",
+      "sha256": "e3a1c22028442a53058006e24f16efc4f7e36e4b1ebf53d006f7198a7ca9062e"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/install.log",
+      "sha256": "ee7ba50bbd40595455096bff37da8db0ee6649084f1b3880a4b758de189b04e1"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/tests.log",
+      "sha256": "84c8f2fe575dfbf29a96c4760b6e4b83f79e9b1a7c0758e93bd4e4d72edcd4ec"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/tests-after-scratch-setup.log",
+      "sha256": "564c1f665eb9f6b7c3ffdbe4d9036ed7cf0abc575a4d6353ae151add4c7ca991"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/build.log",
+      "sha256": "ee92fda9344f04d6bab9c89a2ff53ad3873dfb1dd56923904de59554bf70b2da"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/model-provision.log",
+      "sha256": "cce2cdf44e8ef225b8bf5a66a7d5e6ce84265e78af1e38692b5fbd3fedf0f5c3"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/workflow.log",
+      "sha256": "a93613ecd704aa694d314dff17c0b4e693fe02f89090ad8e8e437009d89cc641"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/workflow/workflow.json",
+      "sha256": "4c2e878144b2619c9c4521caa16f20dfb0f8b00c8342875894f9903359d2a916"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/live-service.json",
+      "sha256": "95c3f947c625e1e20aa33c1c7949d7ac276c17d0395940dd79919ecad022c4be"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/live-ui.json",
+      "sha256": "a4f098a228b91941e335eeccb307b178512c9e279c8feba466e096c2ceaf8275"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/live-store-before.json",
+      "sha256": "c140c24fb679fb8f37a4e91b1afa9c9ec2573e81a667487fcfe3bcabab6ecb0d"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/live-store-after.json",
+      "sha256": "c140c24fb679fb8f37a4e91b1afa9c9ec2573e81a667487fcfe3bcabab6ecb0d"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/live-desktop.png",
+      "sha256": "26e63f6b007c60e926c9f099799947790373ac49511b9a1e45dacfe475bab655"
+    },
+    {
+      "path": "artifacts/evidence/reconciliation/local-release/live-mobile.png",
+      "sha256": "faa0afae9248ce5a528dd5f205835e5a126bbf54c9cfeb287a9b5e4c24a7cb10"
+    }
+  ]
+}

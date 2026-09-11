@@ -1,0 +1,17 @@
+/* ACTA adaptation of Caja de Ahorros public website styles, extracted 2026-09-10.
+ * Source: https://www.cajadeahorros.com.pa/wp-content/themes/cajadeahorros/style.css?ver=1.0.0
+ * Exact provenance and adapted role mappings: references/caja-brand.md.
+ * This is not an official bank brand manual. No remote assets are required.
+ */
+:root {
+  --acta-primary: #005199;
+  --acta-primary-hover: #1370c2;
+  --acta-ink: #07355e;
+  --acta-muted: #506578;
+  --acta-surface: #ffffff;
+  --acta-surface-soft: #f5f8fb;
+  --acta-border: #bad0e3;
+  --acta-font: "Poppins", system-ui, sans-serif;
+  --acta-control-radius: 8px;
+}
+

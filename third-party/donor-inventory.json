@@ -1,0 +1,170 @@
+{
+  "inspectedAt": "2026-09-10T20:05:02.398Z",
+  "license": "MIT; notices retained",
+  "decisionsDocument": "NOTICE.md",
+  "runtimeDependencies": [
+    "@qvac/sdk@0.18.2",
+    "@qvac/llm-llamacpp@0.45.0"
+  ],
+  "files": [
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "src/sucursal/guia.js",
+      "sha256": "b2e33c5af113c9edfd973cc89dbde62a55317f19bdd9b76ef795fcd69f805d0b",
+      "decision": "adapt",
+      "target": "src/sucursal/guia.js",
+      "targetSha256": "4c34f361eff31465ca997cd9ed0ca70b8fae43b04ab969871e0ab5bf2870f670"
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "src/sucursal/procedimiento.js",
+      "sha256": "84026ef440251dc019e2990859a48b4e6182ee8ef43837aed565244727668377",
+      "decision": "adapt",
+      "target": "src/sucursal/procedimiento.js",
+      "targetSha256": "0e9be6e02980eb8ecf24efb16ea41bb882c25ab37f5edcacdc8ec760eab944c2"
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "src/core/sello.js",
+      "sha256": "e92015833c7721a03f663d239916f98fb58132a44f79ef46cf1d64df28953655",
+      "decision": "reuse",
+      "target": "src/core/sello.js",
+      "targetSha256": "aefe0e1490af0361c406b4e8d5634ecd22d2a4fda9c56f4be325369fe4cac4e6"
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "fixtures/sucursal/guia-bpl.md",
+      "sha256": "945b01df9e796fddf9560364bb2ae9830b8da34da93aa20abc1a94dbb7ca347f",
+      "decision": "reuse",
+      "target": "fixtures/sucursal/guia-bpl.md",
+      "targetSha256": "945b01df9e796fddf9560364bb2ae9830b8da34da93aa20abc1a94dbb7ca347f"
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "fixtures/sucursal/casos.json",
+      "sha256": "befae87eaf3409bde7c91d364717fa77e115b4d57129dcf1eab9d7786b017314",
+      "decision": "reuse",
+      "target": "fixtures/sucursal/casos.json",
+      "targetSha256": "f957aaf4c2fe1c6621dcfa9d9d783d715ffc21b4441ba12aedb6578101019332"
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "LICENSE",
+      "sha256": "62803ce81394557ab52e2a11bef3d2e8494c89b59f9d15c64b9020a8c293f1cf",
+      "decision": "reuse",
+      "target": "third-party/VIGIA-LICENSE",
+      "targetSha256": "0a2d167069726dc9f32fecd67d5271fef19a1cdf248d63930255156a102eee2f"
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "src/sucursal/http.js",
+      "sha256": "7f43ee63999e7705ea200aa6fcdade931cd3247653796b4c1a1e03b2f6a70db7",
+      "decision": "omit",
+      "target": null
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "src/sucursal/expediente.js",
+      "sha256": "23eb6863b4892c4fe9126013521ffae6f218a6447ca0f660f571f1aa4bdccfd0",
+      "decision": "omit",
+      "target": null
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "src/core/eventos.js",
+      "sha256": "4cf88471f95bdf956b72a6d52ecdd59f168ba8acf8b2015f4f491a939cd9066b",
+      "decision": "omit",
+      "target": null
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "src/core/rendimiento.js",
+      "sha256": "c43a95af6acff147f1eaf4593eb1f71f96678c601300b4107527de044335cc62",
+      "decision": "omit",
+      "target": null
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "app/sucursal.html",
+      "sha256": "55828355b2bad55c8614787015fdf5e271406e46d5eff322f704c868d174f515",
+      "decision": "omit",
+      "target": null
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "app/verificar.html",
+      "sha256": "266d7e38c61609116d73c1472ea16377989fa241e17295707c1e1b3379646e02",
+      "decision": "omit",
+      "target": null
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "app/verificar.js",
+      "sha256": "7897f406a08c9c570e242ff86e718dd3c1495a87b5f60d08d09a0342724633a9",
+      "decision": "omit",
+      "target": null
+    },
+    {
+      "sourceRepository": "cpu-16/vigia",
+      "sourceCommit": "942b94307265f383ac941141a6a503e69ebcd079",
+      "path": "src/core/runtime.js",
+      "sha256": "2c44b880b5c3d6329aeaee7e8f468464c3c62c629a52cd4b4cde3da372a31bac",
+      "decision": "adapt",
+      "target": "src/runtime/worker.js",
+      "targetSha256": "2041f97b6ba6b43cb1ca6d1a85d7f4d2a6301056ae4e938c69d60c357cf2ebc5"
+    },
+    {
+      "sourceRepository": "jefferygyamerah/notare",
+      "sourceCommit": "974eecd7cac8a1527e68e890e50cf6907a5198b1",
+      "path": "packages/runtime/bare-entry.ts",
+      "sha256": "646f462c51110ef3739d539da615c252abe281b708f617ef70b52fa0a072920e",
+      "decision": "adapt",
+      "reason": "Worker boundary, native metrics or compatible text-model manifest; no clinical schemas."
+    },
+    {
+      "sourceRepository": "jefferygyamerah/notare",
+      "sourceCommit": "974eecd7cac8a1527e68e890e50cf6907a5198b1",
+      "path": "packages/runtime/shared-runtime.ts",
+      "sha256": "93ddd2e3a38513e7044eca55c676ed4df67d976467ea97a684180f2de2949179",
+      "decision": "adapt",
+      "reason": "Worker boundary, native metrics or compatible text-model manifest; no clinical schemas."
+    },
+    {
+      "sourceRepository": "jefferygyamerah/notare",
+      "sourceCommit": "974eecd7cac8a1527e68e890e50cf6907a5198b1",
+      "path": "packages/runtime/worker.ts",
+      "sha256": "dcf7b75914c877125c002968909898dd8d90ec1540d056afe7fc6e4ad8232d16",
+      "decision": "adapt",
+      "reason": "Worker boundary, native metrics or compatible text-model manifest; no clinical schemas."
+    },
+    {
+      "sourceRepository": "jefferygyamerah/notare",
+      "sourceCommit": "974eecd7cac8a1527e68e890e50cf6907a5198b1",
+      "path": "MODEL-MANIFEST.json",
+      "sha256": "9be424ea94d41c5d244d684e584347c3b899d8d7ba0e3c5537ae90b09de9f970",
+      "decision": "adapt",
+      "reason": "Worker boundary, native metrics or compatible text-model manifest; no clinical schemas."
+    },
+    {
+      "sourceRepository": "jefferygyamerah/notare",
+      "sourceCommit": "974eecd7cac8a1527e68e890e50cf6907a5198b1",
+      "path": "LICENSE",
+      "sha256": "62803ce81394557ab52e2a11bef3d2e8494c89b59f9d15c64b9020a8c293f1cf",
+      "decision": "adapt",
+      "reason": "Worker boundary, native metrics or compatible text-model manifest; no clinical schemas."
+    }
+  ]
+}

@@ -1,60 +1,67 @@
-# ACTA
+# ACTA — Cada paso, con respaldo.
 
-**Revisión de expedientes bancarios y preparación del siguiente paso, con IA local.**
+ACTA ayuda al colaborador de una sucursal a revisar los documentos de una solicitud de cuenta, preparar una sola lista justificada de pendientes y continuar el mismo expediente cuando el cliente regresa.
 
-ACTA es una propuesta para ayudar al personal de una sucursal a consultar procedimientos, revisar solicitudes incompletas y dejar un expediente claro para la siguiente persona. Como función de apoyo, cuando corresponde contactar al cliente, prepara una plantilla de correo, mensaje breve o guía de conversación para revisión del colaborador.
+En el ejemplo ficticio, Lucía entrega una identificación válida, pero su comprobante y su solicitud muestran domicilios diferentes; además falta respaldo de ingresos. QVAC propone una lectura local de los PDF. El colaborador confirma los datos y el respaldo de los hallazgos. ACTA conserva la identificación, prepara los dos pendientes y guarda la revisión. Con la respuesta del cliente, muestra lo resuelto y deja el expediente listo para el supervisor.
 
-> **Estado: documentación y planificación.** Este repositorio todavía no contiene la aplicación, un modelo ejecutable ni resultados propios de pruebas. La reutilización de componentes de Vigía está planificada. La demostración utilizará una entidad, procedimientos y clientes ficticios.
+El resultado es una revisión documental conservada con sus fuentes y su historial. No abre una cuenta, actualiza el CORE ni envía mensajes.
 
-## Autoría y reutilización
+Prototipo para el reto de Caja de Ahorros. Usa colores extraídos de su sitio público; la guía y los casos son ficticios. No representa procedimientos de Caja ni una implementación oficial.
 
-[Vigía](https://github.com/cpu-16/vigia) fue desarrollado por un compañero de hackathon de Jeffery Gyamerah. ACTA prevé reutilizar componentes de ese trabajo, incluido su módulo bancario, y conservar sus avisos de autoría y licencia. Las adaptaciones y aportaciones específicas de ACTA se documentarán de forma explícita; por ahora este repositorio contiene únicamente planificación. Ver [procedencia y atribución](NOTICE.md).
+## Ejecutar
 
-## Flujo previsto
+Requisitos del perfil verificado: Node.js 24, npm, Windows x64 y GPU compatible. El modelo ocupa aproximadamente 1,06 GB. Se descarga durante el aprovisionamiento.
 
-1. Abrir una solicitud ficticia y consultar el procedimiento aplicable.
-2. Mostrar el pasaje de respaldo y la versión de la guía.
-3. Registrar el documento pendiente y el siguiente paso revisado.
-4. Preparar una plantilla de contacto cuando corresponda.
-5. Guardar la revisión para que otro colaborador comprenda el caso.
+```powershell
+npm ci --no-audit --no-fund
+npm run provision
+npm run build
+npm start
+```
 
-El cierre de una revisión no activa una cuenta ni resuelve documentos pendientes. Copiar una plantilla no significa que se haya contactado al cliente.
+Abra http://127.0.0.1:4318. “Probar el caso de Lucía” carga los tres PDF sintéticos iniciales. La primera lectura verifica el modelo y carga QVAC; las siguientes reutilizan el modelo.
 
-## Documentación
+El modelo se guarda en `.local/models` y los casos en `.local/data`. Puede configurar `ACTA_MODEL_DIR`, `ACTA_DATA_DIR` y `PORT`. No se requieren repositorios hermanos. No copie una base de datos en uso; cierre primero el servidor.
 
-| Documento | Contenido |
-|---|---|
-| [Plan del producto y ejecución](docs/plan.md) | Alcance, reutilización técnica, evaluación, cronograma y video de 4:55 |
-| [Investigación en Panamá](docs/research-panama.md) | Competidores, evidencia del problema, fuentes y límites |
-| [Contacto, privacidad y ciberseguridad](docs/privacy-security.md) | Plantillas, normativa consultada, límites del prototipo y requisitos de un piloto real |
-| [Decisiones acordadas](docs/decisions.md) | Nombre, enfoque bancario, límites de alcance y criterios |
-| [Hackathon y requisitos](docs/HACKATHON.md) | Evento, desafío, plazo, reglas y evidencia pendiente |
-| [Lista de entrega](docs/submission-checklist.md) | Pendientes de implementación, pruebas y presentación |
-| [Procedencia y atribución](NOTICE.md) | Repositorios de referencia y tratamiento de sus licencias |
+## Recorrido de dos visitas
 
-## Evidencia y límites
+1. Seleccione cada PDF, ejecute “Leer con QVAC local” y contraste la propuesta con sus líneas de origen. Corrija lo necesario y confirme la lectura.
+2. Abra “Comparar y aclarar”. Revise los datos y la regla sintética de cada hallazgo.
+3. Confirme los hallazgos, prepare el texto exacto y guarde la primera revisión. Queda pendiente la aclaración de domicilio y el respaldo de ingresos.
+4. Registre la respuesta del cliente en el mismo expediente. El nuevo comprobante sustituye expresamente al anterior; la carta laboral se añade como respaldo.
+5. Revise las nuevas lecturas. Compruebe que ambos pendientes se resolvieron y que la identificación se conserva.
+6. Guarde la segunda revisión, recargue, consulte ambas visitas y exporte el acta firmada.
 
-La investigación reúne fuentes públicas de la Superintendencia de Bancos de Panamá, Caja de Ahorros y proveedores. Sustenta un problema sectorial; aún no valida la frecuencia del problema ni el ahorro de tiempo dentro de Caja. Las soluciones comparables y sus limitaciones están documentadas en [la investigación](docs/research-panama.md).
+Puede adjuntar PDF con texto, TXT o Markdown. Los escaneos sin texto se rechazan explícitamente; no se implementa OCR. Los datos extraídos son propuestas. Una coincidencia literal con la fuente no garantiza una interpretación correcta.
 
-La ejecución local no equivale a cumplimiento legal ni a seguridad demostrada. Los registros del componente de origen inspeccionado son texto plano; las firmas detectan alteraciones y no cifran el contenido. Para esta fase se utilizarán exclusivamente datos sintéticos. La evaluación de un despliegue con información real corresponde al banco y a sus responsables de privacidad y seguridad.
+Cambiar una lectura invalida la confirmación de hallazgos. Las revisiones guardadas permanecen inmutables. La respuesta abre una nueva revisión. Guardar o copiar texto no acredita contacto con el cliente.
 
-## Hackathon y desafío
+La consulta de procedimientos del primer prototipo se conserva en http://127.0.0.1:4318/legacy y mantiene su evidencia histórica.
 
-ACTA se prepara para el **[Decentralized AI Hackathon](https://www.trydojo.io/hackathons/decentralized-ai-hackathon)**, celebrado del **9 al 11 de septiembre de 2026** en el marco del ISD Summit, con Tether como socio técnico.
+## Validación y evidencia
 
-| Detalle | Candidatura de ACTA |
-|---|---|
-| Desafío | **Caja de Ahorros — Soluciones de AI Descentralizada para la Banca** ([Track 05](https://www.trydojo.io/hackathons/decentralized-ai-hackathon?tab=tracks)) |
-| Modalidad | Construcción remota durante 48 horas; asistencia presencial opcional el 11 de septiembre en Ciudad de Panamá |
-| Cierre de entregas | **11 de septiembre de 2026, 08:00 Panamá (UTC−5 / 13:00 UTC)** |
-| Entrega | Repositorio accesible al jurado y video propio de **máximo cinco minutos, en español**, accesible sin credenciales |
-| Requisito técnico | QVAC, con inferencia local o entre pares; sin API de inferencia en la nube |
-| Datos del prototipo | Exclusivamente sintéticos; el reto prohíbe datos reales de clientes de cualquier entidad financiera |
+```powershell
+npm test
+npm run build
+node scripts/reconciliation-e2e.js
+npm run test:e2e
+```
 
-El encaje propuesto es la revisión de expedientes, la consulta de procedimientos y el traspaso claro de solicitudes incompletas entre colaboradores. Las plantillas de contacto son una función secundaria. Esta candidatura no implica validación, aceptación ni respaldo de Caja de Ahorros.
+La prueba de reconciliación usa Edge, PDF sintéticos y un almacén aislado. Registra las propuestas reales del modelo, cualquier corrección automática realizada contra anotaciones de prueba, revisión, persistencia, exportación y capturas. El actor `automation:synthetic-e2e` demuestra mecanismos de revisión; no representa aceptación de un empleado.
 
-Los [detalles y requisitos del hackathon](docs/HACKATHON.md) recogen las fuentes oficiales, la evaluación y los pendientes de entrega. El repositorio continúa privado; su acceso por el jurado debe verificarse antes del cierre. Los documentos de planificación técnica están en inglés; el guion y la demostración se prepararán en español.
+Los resultados vigentes y fallidos están separados en el [estado de entrega](docs/plans/acta/00-status.md). La evaluación anterior de selección de procedimientos no es una medida de exactitud de lectura documental.
 
-## Licencia
+- [Producto y usuario](docs/plans/acta/01-product.md)
+- [Demanda, competidores y límites de la hipótesis](docs/plans/acta/06-market-usecase.md)
+- [Arquitectura](docs/plans/acta/02-architecture.md)
+- [Guion de demostración de dos visitas](docs/demo-reconciliation-es.md)
+- [Operación local en Windows](docs/local-windows.md)
+- [Procedencia y licencias](NOTICE.md)
 
-El contenido original de este repositorio se publica bajo [MIT](LICENSE). Las licencias y avisos de componentes incorporados posteriormente deberán conservarse; ver [NOTICE](NOTICE.md).
+Los registros SQLite, archivos y exportaciones son texto sin cifrar. Las firmas Ed25519 detectan cambios frente a la llave pública de confianza de la instalación; no acreditan identidad bancaria. No hay autenticación de empleados, autorización de producción ni envío de mensajes. Use datos sintéticos exclusivamente.
+
+## Bases preexistentes
+
+ACTA adapta componentes de **Vigía, desarrollado por el compañero de hackathon de Jeffery Gyamerah**, con la licencia MIT de Luis Alain preservada. Adapta el patrón de ejecución y revisión de Notare y reutiliza la base ACTA previamente construida: servicio de casos, SQLite, firmas, controles de revisión e interfaz.
+
+El [inventario y NOTICE](NOTICE.md) identifica versiones, archivos reutilizados, adaptados y omitidos. La extensión añade lectura de PDF con texto, comparación documental, sustituciones explícitas y continuidad entre visitas. No se declara originalidad exclusiva sobre las capacidades de gestión documental o KYC.

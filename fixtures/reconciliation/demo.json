@@ -1,0 +1,29 @@
+{
+  "title": "Apertura de cuenta · Lucía Torres (ficticia)",
+  "asOf": "2026-09-10",
+  "initial": [
+    {
+      "name": "01-solicitud.txt",
+      "text": "SOLICITUD DE CUENTA — EJEMPLO FICTICIO\nTitular: Lucía Torres\nIdentificación: FICTICIO-CED-A203\nDomicilio declarado: Calle Los Robles 14, Panamá\nFecha de solicitud: 2026-09-10"
+    },
+    {
+      "name": "02-identificacion.txt",
+      "text": "IDENTIFICACIÓN FICTICIA — NO VÁLIDA\nTitular: Lucía Torres\nIdentificador: FICTICIO-CED-A203\nVencimiento: 2028-04-20"
+    },
+    {
+      "name": "03-comprobante-domicilio.txt",
+      "text": "COMPROBANTE DE SERVICIO — EJEMPLO FICTICIO\nTitular del servicio: Lucía Torres\nDirección: Calle Los Robles 41, Panamá\nFecha de emisión: 2026-08-20"
+    }
+  ],
+  "response": [
+    {
+      "name": "04-domicilio-corregido.txt",
+      "replacesName": "03-comprobante-domicilio.txt",
+      "text": "CONSTANCIA DE DOMICILIO — EJEMPLO FICTICIO\nTitular: Lucía Torres\nDirección de residencia: Calle Los Robles 14, Panamá\nFecha de emisión: 2026-09-10"
+    },
+    {
+      "name": "05-carta-laboral.txt",
+      "text": "CARTA LABORAL — EJEMPLO FICTICIO\nSe certifica que Lucía Torres trabaja en Taller Ejemplo, S.A.\nTitular: Lucía Torres\nOrigen de ingresos: Salario en Taller Ejemplo, S.A.\nFecha de emisión: 2026-09-09"
+    }
+  ]
+}

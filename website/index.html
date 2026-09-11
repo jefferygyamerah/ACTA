@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACTA — Revisión documental para el personal de sucursal</title>
+<meta name="description" content="ACTA acompaña al colaborador de sucursal en la revisión documental de una solicitud de cuenta: un solo expediente, fuentes visibles y pendientes justificados. Prototipo con datos sintéticos.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido" data-en="Skip to content">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="#inicio">ACTA<small data-en="Every step, backed up.">Cada paso, con respaldo.</small></a>
+    <div class="header-bar">
+      <button class="lang-toggle" type="button" aria-pressed="false" aria-label="Cambiar idioma a inglés" data-en-aria="Switch language to Spanish">English</button>
+      <nav class="site-nav site-nav-desktop" aria-label="Secciones" data-en-aria="Sections">
+        <a href="#visita-1" data-en="First visit">Primera visita</a>
+        <a href="#fuentes" data-en="Source review">Revisión con fuentes</a>
+        <a href="#visita-2" data-en="Second visit">Segunda visita</a>
+        <a href="#revision-humana" data-en="Human review">Revisión humana</a>
+        <a href="evidence.html" data-en="Evidence">Evidencia</a>
+      </nav>
+      <details class="nav-details">
+        <summary data-en="Sections">Secciones</summary>
+        <nav class="site-nav" aria-label="Secciones" data-en-aria="Sections">
+          <a href="#visita-1" data-en="First visit">Primera visita</a>
+          <a href="#fuentes" data-en="Source review">Revisión con fuentes</a>
+          <a href="#visita-2" data-en="Second visit">Segunda visita</a>
+          <a href="#revision-humana" data-en="Human review">Revisión humana</a>
+          <a href="evidence.html" data-en="Evidence">Evidencia</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- 1 · Opening -->
+  <section class="section" id="inicio">
+    <div class="hero-grid">
+      <div class="reveal hero-text">
+        <aside class="comp-panel" aria-label="Identidad de la competición" data-en-aria="Competition identity">
+          <p class="comp-title" data-en="Submission for the Decentralized AI Hackathon">Propuesta para el Decentralized AI Hackathon</p>
+          <p class="comp-track" data-en="Track05 · Local intelligence for banking">Track05 · Inteligencia local para la banca</p>
+          <div class="comp-presenter">
+            <span data-en="Challenge presented by">Reto presentado por</span>
+            <img src="assets/caja-de-ahorros-logo.png" alt="Logotipo de Caja de Ahorros" data-en-alt="Caja de Ahorros logo" width="188" height="43">
+          </div>
+          <p class="comp-disclaimer" data-en="ACTA is an independent submission for this competition. It is not affiliated with, sponsored by or endorsed by Caja de Ahorros.">ACTA es una propuesta independiente para esta competición. No está afiliada a Caja de Ahorros ni cuenta con su patrocinio o aval.</p>
+        </aside>
+        <p class="eyebrow" data-en="Document review for branch staff">Revisión documental para el personal de sucursal</p>
+        <h1 data-en="Make the next visit move the case forward.">Que la próxima visita resuelva el pendiente.</h1>
+      </div>
+      <figure class="concept reveal hero-photo" data-concept="branch-visit.webp">
+        <div class="concept-stack">
+          <img class="concept-img" src="assets/branch-visit.webp"
+               alt="Escena conceptual generada: colaboradora de sucursal recibiendo a una clienta con una carpeta de documentos, en una sucursal modesta y luminosa de Panamá."
+               data-en-alt="Generated conceptual scene: a branch employee meeting a customer holding a document folder, in a modest daylight branch in Panama."
+               width="1600" height="1062">
+        </div>
+        <figcaption>
+          <span class="tag cap-tag" data-en="Generated conceptual scene">Escena conceptual generada</span> <span class="cap" data-en="Document assistance at a branch.">Atención documental en sucursal.</span>
+        </figcaption>
+      </figure>
+      <div class="hero-support">
+        <p class="lead" data-en="Review an account application's documents, keep what is already confirmed, and prepare one justified list of missing items. When the customer returns, continue the same case.">Revise los documentos de una solicitud de cuenta, conserve lo ya confirmado y prepare una sola lista de pendientes. Cuando el cliente regresa, continúe el mismo expediente.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#visita-1" data-en="Explore the case">Explorar el caso</a>
+          <a class="btn btn-ghost" href="http://127.0.0.1:4318/" data-en="Open ACTA on this PC">Abrir ACTA en este PC</a>
+        </div>
+        <p class="caption" data-en="Prototype with synthetic data for the Caja de Ahorros challenge. Not an official bank deployment.">Prototipo con datos sintéticos para el reto de Caja de Ahorros. No es una implementación oficial del banco.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · First visit -->
+  <section class="section-soft" id="visita-1">
+    <div class="section section-inner">
+      <div class="reveal">
+        <div class="sec-head"><span class="sec-num">01</span>
+        <p class="eyebrow" data-en="First visit">Primera visita</p>
+        </div>
+        <h2 data-en="Three papers and one missing item">Tres papeles y un faltante</h2>
+        <p class="lead" data-en="Lucía Torres (fictitious) applies to open an account. She brings a valid identification, an application and a proof of address. Two of them do not match, and one requirement never arrived.">Lucía Torres (ficticia) solicita abrir una cuenta. Trae una identificación válida, una solicitud y un comprobante de domicilio. Dos de ellos no coinciden, y un requisito nunca llegó.</p>
+      </div>
+      <div class="desk-stage reveal">
+      <div class="desk">
+        <article class="paper paper-card">
+          <p class="doc-kind" data-en="Identification — reviewed">Identificación · revisada</p>
+          <p class="frag">Titular: Lucía Torres<br>Identificación: FICTICIO-CED-A203</p>
+          <p class="doc-note" data-en="Matches the application and is current on the review date.">Coincide con la solicitud y está vigente en la fecha de revisión.</p>
+          <span class="chip chip-ok" data-en="Retained">Conservada</span>
+        </article>
+        <article class="paper paper-card">
+          <p class="doc-kind" data-en="Application — reviewed">Solicitud · revisada</p>
+          <p class="frag">Domicilio declarado:<br>Calle Los Robles 14, Panamá</p>
+          <p class="doc-note" data-en="The customer declares this address on her application.">La clienta declara este domicilio en su solicitud.</p>
+          <span class="chip chip-neutral" data-en="Reviewed">Revisada</span>
+        </article>
+        <article class="paper paper-card">
+          <p class="doc-kind" data-en="Proof of address — reviewed">Comprobante de domicilio · revisado</p>
+          <p class="frag">Dirección:<br>Calle Los Robles 41, Panamá</p>
+          <p class="doc-note" data-en="The proof shows a different address than the application: 41 instead of 14.">El comprobante muestra un domicilio distinto al de la solicitud: 41 en lugar de 14.</p>
+          <span class="chip chip-warn" data-en="In conflict">En conflicto</span>
+        </article>
+      </div>
+      <div class="missing-strip reveal">
+        <span class="chip chip-warn" data-en="Missing">Faltante</span>
+        <div class="missing-strip-body">
+          <strong data-en="Income evidence — never arrived">Respaldo de ingresos · no llegó</strong>
+          <span data-en="No reviewed employment letter or income declaration exists in the case file.">No hay carta laboral ni declaración de ingresos revisada en el expediente.</span>
+        </div>
+        <span class="missing-strip-arrow" aria-hidden="true">→</span>
+      </div>
+      </div>
+      <div class="pendings reveal">
+        <h3 data-en="One list, two justified pending items">Una sola lista, dos pendientes justificados</h3>
+        <ol>
+          <li data-en="Clarify the address difference: the application says Calle Los Robles 14 and the proof says Calle Los Robles 41.">Aclarar la diferencia de domicilio: la solicitud dice Calle Los Robles 14 y el comprobante dice Calle Los Robles 41.</li>
+          <li data-en="Present income evidence: an employment letter or income declaration in the holder's name.">Presentar respaldo de ingresos: una carta laboral o declaración de ingresos a nombre de la titular.</li>
+        </ol>
+        <p class="muted" data-en="The valid identification is retained: it is not requested again on the next visit.">La identificación válida se conserva: no vuelve a pedirse en la próxima visita.</p>
+        <p class="conclusion" data-en="Two pending items, one list: the next visit knows exactly what to bring.">Dos pendientes, una sola lista: la próxima visita sabe exactamente qué traer.</p>
+      </div>
+      <p class="caption reveal" data-en="Self-authored illustrative cards, not application screenshots.">Tarjetas ilustrativas de autoría propia; no son capturas de la aplicación.</p>
+    </div>
+  </section>
+
+  <!-- 3 · Source review / local intelligence -->
+  <section class="section-navy" id="fuentes">
+    <div class="section section-inner">
+      <div class="reveal">
+        <div class="sec-head"><span class="sec-num">02</span>
+        <p class="eyebrow" data-en="Source review · local intelligence">Revisión con fuentes · inteligencia local</p>
+        </div>
+        <h2 data-en="Every proposed value, against its source line">Cada dato propuesto, frente a su línea de origen</h2>
+        <p class="lead" data-en="QVAC proposes values with their source lines. The employee checks them, corrects if needed, and confirms before they are used.">QVAC propone datos con líneas de origen. El colaborador los contrasta, corrige si hace falta y confirma antes de usarlos.</p>
+      </div>
+      <div class="source-demo reveal">
+        <span class="demo-label" data-en="Interactive example — no inference, no saved records">Ejemplo interactivo · sin inferencia ni registros guardados</span>
+        <div class="src-switch">
+          <button type="button" data-src="solicitud" aria-pressed="true" data-en="Application">Solicitud</button>
+          <button type="button" data-src="comprobante" aria-pressed="false" data-en="Proof of address">Comprobante de domicilio</button>
+        </div>
+        <div class="src-grid">
+          <div>
+            <div class="src-doc" id="origen-solicitud">
+              <p class="src-title"><span data-en="Application · example excerpt">Solicitud · fragmento del ejemplo</span> <span class="src-lang" data-en="(source text in Spanish)">(texto fuente en español)</span></p>
+              <div class="src-line"><span class="ln">1</span><span>SOLICITUD DE CUENTA — EJEMPLO FICTICIO</span></div>
+              <div class="src-line"><span class="ln">2</span><span>Titular: Lucía Torres</span></div>
+              <div class="src-line"><span class="ln">3</span><span>Identificación: FICTICIO-CED-A203</span></div>
+              <div class="src-line" data-hit><span class="ln">4</span><span>Domicilio declarado: Calle Los Robles 14, Panamá</span></div>
+              <div class="src-line"><span class="ln">5</span><span>Fecha de solicitud: 2026-09-10</span></div>
+            </div>
+            <div class="src-doc" id="origen-comprobante">
+              <p class="src-title"><span data-en="Proof of address · example excerpt">Comprobante de domicilio · fragmento del ejemplo</span> <span class="src-lang" data-en="(source text in Spanish)">(texto fuente en español)</span></p>
+              <div class="src-line"><span class="ln">1</span><span>COMPROBANTE DE SERVICIO — EJEMPLO FICTICIO</span></div>
+              <div class="src-line"><span class="ln">2</span><span>Titular del servicio: Lucía Torres</span></div>
+              <div class="src-line" data-hit><span class="ln">3</span><span>Dirección: Calle Los Robles 41, Panamá</span></div>
+              <div class="src-line"><span class="ln">4</span><span>Fecha de emisión: 2026-08-20</span></div>
+            </div>
+          </div>
+          <div class="src-proposal">
+            <p class="pv-label" data-en="Proposed address">Domicilio propuesto</p>
+            <p class="pv-value">Calle Los Robles 14, Panamá</p>
+            <button class="btn btn-navy" id="ver-linea-origen" type="button" data-en="Show source line">Ver línea de origen</button>
+            <p class="src-reason" role="status"></p>
+          </div>
+        </div>
+      </div>
+      <ol class="chain reveal">
+        <li data-en="Text PDF: only documents with readable text enter the review.">PDF con texto: solo entran a la revisión documentos con texto legible.</li>
+        <li data-en="Local QVAC proposal: the model proposes kind and values on this PC.">Propuesta local de QVAC: el modelo propone tipo y valores en este PC.</li>
+        <li data-en="Employee review: each value is confirmed against its literal source line.">Revisión del colaborador: cada valor se confirma frente a su línea literal.</li>
+        <li data-en="Explicit rules: a synthetic guide compares the reviewed documents and flags matches, differences and missing items.">Reglas explícitas: una guía sintética compara lo revisado y señala coincidencias, diferencias y faltantes.</li>
+      </ol>
+      <p class="no-ai reveal" data-en="AI does not approve accounts. The employee confirms every value; the decision remains human.">La IA no aprueba cuentas. El colaborador confirma cada valor; la decisión sigue siendo humana.</p>
+      <p class="muted reveal" data-en="A literal match with the source does not guarantee a correct interpretation; that is why human confirmation is required.">Una coincidencia literal con la fuente no garantiza una interpretación correcta; por eso la confirmación humana es obligatoria.</p>
+      <p class="muted reveal" data-en="Local data advantage: source reading happens on the same PC that runs the app. ACTA has no cloud inference endpoint.">Ventaja de los datos locales: la lectura de las fuentes ocurre en el mismo PC que ejecuta la aplicación. ACTA no usa un servicio de inferencia en la nube.</p>
+      <details class="real-capture reveal">
+        <summary data-en="See a real capture of a confirmed reading">Ver captura real de una lectura confirmada</summary>
+        <img src="assets/app-reviewed-document.png" alt="Captura real de la aplicación ACTA: lectura confirmada del comprobante de domicilio con sus líneas de origen y valores literales." data-en-alt="Real capture of the ACTA app: confirmed reading of the proof of address with its source lines and literal values.">
+        <p class="caption" data-en="Real capture from the verified run of 2026-09-10 (workflow-v6), synthetic data.">Captura real de la ejecución verificada del 2026-09-10 (workflow-v6), datos sintéticos.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 4 · Second visit -->
+  <section class="section" id="visita-2">
+    <div class="reveal">
+      <div class="sec-head"><span class="sec-num">03</span>
+      <p class="eyebrow" data-en="Same case, second visit">El mismo caso, segunda visita</p>
+      </div>
+      <h2 data-en="The customer returns — and the reviewed work is still there">La clienta regresa, y el trabajo revisado sigue ahí</h2>
+      <p class="lead" data-en="Lucía comes back with a corrected proof and an employment letter. ACTA keeps the valid identification, expressly replaces the conflicting proof and adds the income evidence — in the same case file.">Lucía vuelve con un comprobante corregido y una carta laboral. ACTA conserva la identificación válida, sustituye expresamente el comprobante en conflicto y añade el respaldo de ingresos, en el mismo expediente.</p>
+    </div>
+    <div class="workspace reveal">
+      <div class="case-strip">
+        <span class="case-strip-id" data-en="Lucía Torres · fictitious case file · same case">Lucía Torres · expediente ficticio · mismo caso</span>
+        <span class="demo-label demo-label-inline" data-en="Interactive illustration — saves nothing">Ilustración interactiva · no guarda nada</span>
+      </div>
+      <div class="visit-tabs" role="tablist" aria-label="Visitas del caso" data-en-aria="Case visits">
+        <button type="button" role="tab" id="tab-visita-1" aria-controls="panel-visita-1" aria-selected="true" data-en="Visit 1">Visita 1</button>
+        <button type="button" role="tab" id="tab-visita-2" aria-controls="panel-visita-2" aria-selected="false" tabindex="-1" data-en="Visit 2">Visita 2</button>
+      </div>
+      <div class="visit-panel" role="tabpanel" id="panel-visita-1" aria-labelledby="tab-visita-1">
+        <div class="visit-docs">
+          <article class="vdoc">
+            <h4 data-en="Identification">Identificación</h4>
+            <p class="vdoc-sub" data-en="Reviewed on visit 1; not requested again.">Revisada en la visita 1; no vuelve a pedirse.</p>
+            <span class="chip chip-ok" data-en="Retained">Conservada</span>
+          </article>
+          <article class="vdoc">
+            <h4 data-en="Application">Solicitud</h4>
+            <p class="vdoc-sub" data-en="Declared address: Calle Los Robles 14.">Domicilio declarado: Calle Los Robles 14.</p>
+            <span class="chip chip-ok" data-en="Retained">Conservada</span>
+          </article>
+          <article class="vdoc">
+            <h4 data-en="Proof of address">Comprobante de domicilio</h4>
+            <p class="vdoc-sub" data-en="Calle Los Robles 41: does not match the application.">Calle Los Robles 41: no coincide con la solicitud.</p>
+            <span class="chip chip-warn" data-en="Pending clarification">Pendiente de aclaración</span>
+          </article>
+          <article class="vdoc">
+            <h4 data-en="Income evidence">Respaldo de ingresos</h4>
+            <p class="vdoc-sub" data-en="No reviewed employment letter or declaration.">Sin carta laboral ni declaración revisada.</p>
+            <span class="chip chip-warn" data-en="Missing">Faltante</span>
+          </article>
+        </div>
+        <div class="visit-summary" data-en="Visit 1 result: a saved review with two justified pending items — address clarification and income evidence. The valid identification stays in the file.">Resultado de la visita 1: revisión guardada con dos pendientes justificados (aclaración de domicilio y respaldo de ingresos). La identificación válida queda en el expediente.</div>
+        <div class="review-log">
+          <div class="review-entry">
+            <strong data-en="Review 1 · saved">Revisión 1 · guardada</strong>
+            <span data-en="Pending customer response — two justified pending items.">Pendiente de respuesta del cliente · dos pendientes justificados.</span>
+          </div>
+        </div>
+      </div>
+      <div class="visit-panel" role="tabpanel" id="panel-visita-2" aria-labelledby="tab-visita-2">
+        <div class="visit-docs">
+          <article class="vdoc">
+            <h4 data-en="Identification">Identificación</h4>
+            <p class="vdoc-sub" data-en="The same document reviewed on visit 1.">El mismo documento revisado en la visita 1.</p>
+            <span class="chip chip-ok" data-en="Retained">Conservada</span>
+          </article>
+          <article class="vdoc">
+            <h4 data-en="Application">Solicitud</h4>
+            <p class="vdoc-sub" data-en="Unchanged: Calle Los Robles 14.">Sin cambios: Calle Los Robles 14.</p>
+            <span class="chip chip-ok" data-en="Retained">Conservada</span>
+          </article>
+          <article class="vdoc replaced">
+            <h4 data-en="Previous proof of address">Comprobante anterior</h4>
+            <p class="vdoc-sub" data-en="Replaced by the corrected proof; retained in the history.">Sustituido por el comprobante corregido; se conserva en el historial.</p>
+            <span class="chip chip-neutral" data-en="Expressly replaced">Sustituido expresamente</span>
+          </article>
+          <article class="vdoc added">
+            <h4 data-en="Corrected proof">Comprobante corregido</h4>
+            <p class="vdoc-sub" data-en="Calle Los Robles 14: now matches the application.">Calle Los Robles 14: ahora coincide con la solicitud.</p>
+            <span class="chip chip-ok" data-en="Added on visit 2">Añadido en la visita 2</span>
+          </article>
+          <article class="vdoc added">
+            <h4 data-en="Employment letter">Carta laboral</h4>
+            <p class="vdoc-sub" data-en="Income evidence in the holder's name.">Respaldo de ingresos a nombre de la titular.</p>
+            <span class="chip chip-ok" data-en="Added on visit 2">Añadida en la visita 2</span>
+          </article>
+        </div>
+        <div class="visit-summary" data-en="Visit 2 changes: the corrected proof expressly replaces the previous one; the employment letter is added as evidence; the identification and application are retained. Both pending items are resolved.">Cambios de la visita 2: el comprobante corregido sustituye expresamente al anterior; la carta laboral se añade como respaldo; la identificación y la solicitud se conservan. Ambos pendientes quedan resueltos.</div>
+        <div class="review-log">
+          <div class="review-entry">
+            <strong data-en="Review 1 · saved">Revisión 1 · guardada</strong>
+            <span data-en="Pending customer response — two justified pending items.">Pendiente de respuesta del cliente · dos pendientes justificados.</span>
+          </div>
+          <div class="review-entry">
+            <strong data-en="Review 2 · saved">Revisión 2 · guardada</strong>
+            <span data-en="Ready for supervisor review — no documentary pending items.">Lista para revisión del supervisor · sin pendientes documentales.</span>
+          </div>
+        </div>
+      </div>
+      <div style="padding: 0 1.6rem 1.6rem;">
+        <p class="src-links">
+          <span data-en="Back to the source:">Volver a la fuente:</span>
+          <a href="#origen-solicitud" data-src-link="solicitud" data-en="Application, line 4">Solicitud, línea 4</a>
+          <a href="#origen-comprobante" data-src-link="comprobante" data-en="Proof, line 3">Comprobante, línea 3</a>
+        </p>
+        <p class="caption" data-en="Switching visits only changes the examples shown; it does not alter any case file.">Cambiar de visita solo cambia los ejemplos mostrados; no altera ningún expediente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Human review and durable result -->
+  <section class="section-warm" id="revision-humana">
+    <div class="section section-inner">
+      <div class="two-col">
+        <figure class="concept reveal" data-concept="branch-review.webp">
+          <div class="concept-stack">
+            <img class="concept-img" src="assets/branch-review.webp" loading="lazy"
+                 alt="Escena conceptual generada: colaboradora de sucursal revisando un documento en papel junto a un monitor, con luz natural."
+                 data-en-alt="Generated conceptual scene: a branch employee reviewing a paper document beside a monitor, in natural daylight."
+                 width="1600" height="1062">
+          </div>
+          <figcaption>
+            <span class="tag cap-tag" data-en="Generated conceptual scene">Escena conceptual generada</span> <span class="cap" data-en="Reviewing a document at the branch.">Revisión de un documento.</span>
+          </figcaption>
+        </figure>
+        <div class="reveal">
+          <div class="sec-head"><span class="sec-num">04</span>
+          <p class="eyebrow" data-en="Human review, durable result">Revisión humana, resultado duradero</p>
+          </div>
+          <h2 data-en="Nothing counts until a person confirms it">Nada cuenta hasta que una persona lo confirma</h2>
+          <p class="lead" data-en="The same rule that governs the app governs this example: review the sources first, then confirm.">La misma regla de la aplicación rige este ejemplo: primero contrastar las fuentes, luego confirmar.</p>
+          <div class="review-demo">
+            <span class="demo-label" data-en="Interactive example — saves nothing">Ejemplo interactivo · no guarda nada</span>
+            <label class="check" for="ack-check">
+              <input type="checkbox" id="ack-check">
+              <span data-en="I checked the example against its sources">He contrastado el ejemplo con sus fuentes</span>
+            </label>
+            <div class="btn-row">
+              <button class="btn btn-primary" id="ack-confirm" type="button" disabled data-en="Confirm this example">Confirmar este ejemplo</button>
+              <button class="btn btn-ghost" id="ack-reset" type="button" hidden data-en="Reset">Restablecer</button>
+            </div>
+            <p class="review-result" id="ack-result" role="status" data-en="Example confirmed. No case file was saved.">Ejemplo confirmado. No se guardó un expediente.</p>
+            <noscript><p class="caption" data-en="This demonstration control requires JavaScript; it stores nothing either way.">Este control de demostración requiere JavaScript; de cualquier forma no guarda nada.</p></noscript>
+          </div>
+          <h3 data-en="What was actually demonstrated on this PC">Lo que sí quedó demostrado en este PC</h3>
+          <ul class="proof-list">
+            <li data-en="Two signed reviews survived a browser reload, a service restart and an independent SQLite reader.">Dos revisiones firmadas sobrevivieron a la recarga del navegador, al reinicio del servicio y a un lector SQLite independiente.</li>
+            <li data-en="The signed original was verified and an altered copy was rejected.">El original firmado se verificó y una copia alterada fue rechazada.</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-ghost" href="evidence.html" data-en="See the verified evidence">Ver la evidencia verificada</a>
+          </div>
+        </div>
+      </div>
+      <div class="scope-panel reveal">
+        <h3 data-en="Prototype scope">Alcance del prototipo</h3>
+        <ul>
+          <li data-en="Text PDFs only; scans without a text layer are explicitly rejected. There is no OCR.">Solo PDF con texto; los escaneos sin capa de texto se rechazan explícitamente. No hay OCR.</li>
+          <li data-en="Model proposals require employee review and correction; the tests are software checks, not model accuracy measurements.">Las propuestas del modelo requieren revisión y corrección del colaborador; las pruebas son verificaciones de software, no mediciones de exactitud del modelo.</li>
+          <li data-en="No validation with a real bank yet; no production authentication, encryption or message delivery.">Aún sin validación con un banco real; sin autenticación, cifrado ni envío de mensajes de producción.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Close -->
+  <section class="section-navy close-section" id="cierre">
+    <div class="section section-inner">
+      <div class="reveal close-inner">
+        <p class="close-mark" aria-hidden="true">ACTA</p>
+        <h2 class="close-headline" data-en="Every step, backed up.">Cada paso, con respaldo.</h2>
+        <p class="lead close-lead" data-en="One case file, reviewed sources and justified pending items — ready for the next visit and for the supervisor.">Un solo expediente, fuentes revisadas y pendientes justificados: listo para la próxima visita y para el supervisor.</p>
+        <p class="close-comp" data-en="Submission for the Decentralized AI Hackathon · Track05 · Local intelligence for banking">Propuesta para el Decentralized AI Hackathon · Track05 · Inteligencia local para la banca</p>
+        <div class="btn-row close-cta">
+          <a class="btn btn-light" href="http://127.0.0.1:4318/" data-en="Open ACTA on this PC">Abrir ACTA en este PC</a>
+          <a class="btn btn-outline-light" href="evidence.html" data-en="Verified evidence">Evidencia verificada</a>
+        </div>
+        <p class="video-status"><span class="tag" data-en="Status">Estado</span> <span data-en="Final video in production">Video final en producción</span></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p data-en="Prototype with synthetic data · Submission for the Decentralized AI Hackathon · Track05 · Local intelligence for banking.">Prototipo con datos sintéticos · Propuesta para el Decentralized AI Hackathon · Track05 · Inteligencia local para la banca.</p>
+    <p class="foot-affil" data-en="ACTA is an independent submission for this competition. It is not affiliated with, sponsored by or endorsed by Caja de Ahorros.">ACTA es una propuesta independiente para esta competición. No está afiliada a Caja de Ahorros ni cuenta con su patrocinio o aval.</p>
+    <p data-en="The logo identifies the challenge presenter and belongs to Caja de Ahorros.">El logotipo identifica al presentador del reto y pertenece a Caja de Ahorros.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
